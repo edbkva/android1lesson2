@@ -10,6 +10,10 @@
     <color name="correct_color">#E207F81F</color>
     <color name="incorrect_color">#E8EC0E0E</color>
     <color name="default_color">#4F54D8</color>
+    <color name="yellov">#FFBA00</color>
+    <color name="roza_colo">#FDB095</color>
+
+
 
 
 </resources>

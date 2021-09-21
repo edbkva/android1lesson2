@@ -3,12 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
         <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/drawable/correct_colo.xml" value="0.20729166666666668" />
         <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/drawable/correct_color.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/drawable/defaul_colo.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/drawable/incorerct_answer.xml" value="0.20729166666666668" />
         <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/drawable/incorrect_color.xml" value="0.20104166666666667" />
+        <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/drawable/oval.xml" value="0.2" />
+        <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/drawable/roza_colo.xml" value="0.3828125" />
+        <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/drawable/rozovui.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
+        <entry key="..\:/Users/Deel/AndroidStudioProjects/android1lesson2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
       </map>
     </option>
   </component>

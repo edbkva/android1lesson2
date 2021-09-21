@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View view) {
                                 if (isDog){
-                                        countDownTimer = new CountDownTimer(5000,1000) {
+                                        countDownTimer = new CountDownTimer(1000,1000) {
 
                                                 @Override
 
                                                 public void onTick(long l) {
-                                                        YoYo.with(Techniques.Tada)
-                                                                .duration(5000)
-                                                                .repeat(1000)
+                                                        YoYo.with(Techniques.Shake)
+                                                                .duration(100)
+                                                                .repeat(1)
                                                                 .playOn(findViewById(R.id.dog_btn));
                                                         dog.setBackgroundResource(R.drawable.correct_color);
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                                                 @Override
 
                                                 public void onFinish() {
-                                                        dog.setBackgroundResource(R.drawable.defaul_colo);
+                                                        dog.setBackgroundResource(R.drawable.roza_colo);
                                                 }
 
                                         }.start();
@@ -60,12 +60,12 @@ public class MainActivity extends AppCompatActivity {
                                         Toast.makeText(MainActivity.this, "Верно", Toast.LENGTH_SHORT).show();
 
                                 }else {
-                                        countDownTimer= new CountDownTimer(5000,1000) {
+                                        countDownTimer= new CountDownTimer(1000,1000) {
                                                 @Override
                                                 public void onTick(long l) {
                                                         YoYo.with(Techniques.Tada)
-                                                                .duration(5000)
-                                                                .repeat(1000)
+                                                                .duration(100)
+                                                                .repeat(1)
                                                                 .playOn(findViewById(R.id.dog_btn));
                                                         dog.setBackgroundResource(R.drawable.incorrect_color);
 
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
                                                 @Override
                                                 public void onFinish() {
-                                                        dog.setBackgroundResource(R.drawable.defaul_colo );
+                                                        dog.setBackgroundResource(R.drawable.roza_colo);
 
                                                 }
                                         }.start();
@@ -87,15 +87,13 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View view) {
                                 if (isCat){
-                                        countDownTimer = new CountDownTimer(5000,1000) {
+                                        countDownTimer = new CountDownTimer(1000,1000) {
                                                 @Override
                                                 public void onTick(long l) {
-                                                        YoYo.with(Techniques.Tada)
-                                                                .duration(5000)
-                                                                .repeat(1000)
+                                                        YoYo.with(Techniques.Shake)
+                                                                .duration(100)
+                                                                .repeat(1)
                                                                 .playOn(findViewById(R.id.cat_btn));
-
-
                                                         cat.setBackgroundResource(R.drawable.correct_color);
 
                                                 }
@@ -103,10 +101,10 @@ public class MainActivity extends AppCompatActivity {
                                                 @Override
                                                 public void onFinish() {
                                                         YoYo.with(Techniques.Tada)
-                                                                .duration(5000)
-                                                                .repeat(1000)
+                                                                .duration(100)
+                                                                .repeat(1)
                                                                 .playOn(findViewById(R.id.cat_btn));
-                                                        cat.setBackgroundResource(R.drawable.defaul_colo);
+                                                        cat.setBackgroundResource(R.drawable.roza_colo);
 
 
                                                 }
@@ -115,6 +113,24 @@ public class MainActivity extends AppCompatActivity {
                                         Toast.makeText(MainActivity.this, "Верно", Toast.LENGTH_SHORT).show();
 
                                 }else {
+                                        countDownTimer= new CountDownTimer(1000,1000) {
+                                                @Override
+                                                public void onTick(long l) {
+                                                        YoYo.with(Techniques.Shake)
+                                                                .duration(100)
+                                                                .repeat(1)
+                                                                .playOn(findViewById(R.id.cat_btn));
+                                                        cat.setBackgroundResource(R.drawable.incorrect_color);
+
+                                                }
+
+                                                @Override
+                                                public void onFinish() {
+                                                        cat.setBackgroundResource(R.drawable.roza_colo);
+
+                                                }
+                                        }.start();
+
                                         Toast.makeText(MainActivity.this, "Не верно", Toast.LENGTH_SHORT).show();
 
                                 }
@@ -125,22 +141,51 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View view) {
                                 if (isSquirrel){
-                                        countDownTimer = new CountDownTimer(5000,1000) {
+                                        countDownTimer = new CountDownTimer(1000,1000) {
                                                 @Override
                                                 public void onTick(long l) {
-                                                        
+                                                        YoYo.with(Techniques.Shake)
+                                                                .duration(100)
+                                                                .repeat(1)
+                                                                .playOn(findViewById(R.id.squirrel_btn));
+                                                        squirrel.setBackgroundResource(R.drawable.correct_color);
+
+
 
                                                 }
 
                                                 @Override
                                                 public void onFinish() {
+                                                        YoYo.with(Techniques.Tada)
+                                                                .duration(100)
+                                                                .repeat(1)
+                                                                .playOn(findViewById(R.id.squirrel_btn));
+                                                        squirrel.setBackgroundResource(R.drawable.roza_colo);
+
 
                                                 }
-                                        }
+                                        }.start();
                                         Toast.makeText(MainActivity.this, "Верно", Toast.LENGTH_SHORT).show();
-                                        isDog=false;
-                                        isCat=false;
+
                                 }else {
+                                        countDownTimer= new CountDownTimer(1000,1000) {
+                                                @Override
+                                                public void onTick(long l) {
+                                                        YoYo.with(Techniques.Tada)
+                                                                .duration(100)
+                                                                .repeat(1)
+                                                                .playOn(findViewById(R.id.squirrel_btn));
+                                                        squirrel.setBackgroundResource(R.drawable.incorrect_color);
+
+                                                }
+
+                                                @Override
+                                                public void onFinish() {
+                                                        squirrel.setBackgroundResource(R.drawable.roza_colo);
+
+                                                }
+                                        }.start();
+
                                         Toast.makeText(MainActivity.this, "Не верно", Toast.LENGTH_SHORT).show();
 
                                 }
